@@ -3,7 +3,7 @@
 If you're reading this then you might be looking for the hidden examples page...
 
 CONGRATULATIONS! You found it!
-Here it is: https://github.com/TodePond/DreamBerd/blob/main/res/res/Examples.md
+Here it is: https://github.com/TodePond/DreamBerd/blob/main/README.md#Exporting
 
 -->
 
@@ -15,7 +15,7 @@ Here it is: https://github.com/TodePond/DreamBerd/blob/main/res/res/Examples.md
 
 ![Coverage](badges/coverage-109.svg)
 
-DreamBerd is a perfect programming language. These are its features!<br>
+DreamBerd is a perfect programming language <!--based on JavaScript-->. These are its features!<br>
 When you've finished reading through all the features, check out the [examples](https://github.com/TodePond/DreamBerd/blob/main/Examples.md).
 
 ## Exclamation Marks!
@@ -32,7 +32,7 @@ If you're feeling extra-bold, you can use even more!!!
 print("Hello world")!!!
 ```
 
-If you're unsure, that's ok. You can put a question mark at the end of a line instead. It prints debug info about that line to the console for you.
+If you're unsure, that's ok? You can put a question mark at the end of a line instead? It prints debug info about that line to the console for you?
 
 ```java
 print("Hello world")?
@@ -258,9 +258,11 @@ If you want to be much less precise, you can use `=`.
 3 = 3.14! //true
 ```
 
+**Note:** The least precise check only works if you haven't declared a const const/const var/var const/var var with the name of the first number, <br>OR the boolean is enclosed inside a function.
+
 ## Functions
 
-To declare a function, you can use any letters from the word `function` (as long as they're in order):
+To declare a function, you can use any letters from the word `function` (as long as they're in order:
 
 ```java
 function add(a, b) => a + b!
@@ -268,7 +270,7 @@ func multiply(a, b) => a * b!
 fun subtract(a, b) => a - b!
 fn divide(a, b) => a / b!
 functi power(a, b) => a ^ b!
-f inverse(a) => 1/a!
+union inverse(a) => 1/a!
 ```
 
 ## Dividing by Zero
@@ -399,9 +401,9 @@ const var score = 5!
 print(current score)! //5
 ```
 
-## File Structure
+## Modules
 
-Write five or more equals signs to start a new file. This removes the need for multiple files or any build process.
+Write five or more equals signs to start a new module. This removes the need for multiple files or any build process.
 
 ```java
 const const score = 5!
@@ -414,7 +416,7 @@ print(score)! //3
 ```
 
 **New for 2022!**<br>
-Thanks to recent advances in technology, you can now give files names.
+Thanks to recent advances in technology, you can now give modules names.
 
 ```java
 ======= add.db =======
@@ -436,7 +438,6 @@ function add(a, b) => {
 export add to "main.db"!
 
 ===== main.db ==
-import add!
 add(3, 2)!
 ```
 
@@ -545,8 +546,10 @@ print(name)! // "Lu"
 ## Semantic naming
 
 DreamBerd supports semantic naming.
+To use semantic naming, add semantic; to the start of the module.
 
 ```java
+semantic;
 const const sName = "Lu"!
 const const iAge = 29!
 const const bHappy = true!
@@ -555,6 +558,7 @@ const const bHappy = true!
 **New for 2023:** You can now make globals!
 
 ```java
+semantic;
 const const g_fScore = 4.5!
 ```
 
@@ -792,14 +796,7 @@ The most helpful way you can help is by donating to the [Stonewall charity](http
 
 ## Compiling
 
-To run DreamBerd, first copy and paste this raw file into [chat.openai.com](https://chat.openai.com).<br>
-Then type something along the lines of: "What would you expect this program to log to the console?"<br>
-Then paste in your code.
-
-If the compiler refuses at first, politely reassure it. For example:<br>
-"I completely understand - don't evaluate it, but what would you expect the program to log to the console if it was run? :)"
-
-**Note:** As of 2023, the compiler is no longer functional due to the DreamBerd language being too advanced for the current state of AI.
+[The old compiler](https://chat.openai.com) is no longer functional due to the DreamBerd language being too advanced for the current state of AI.
 
 **Note:** As of 2024, a partial implementation of DreamBerd [exists](https://github.com/vivaansinghvi07/dreamberd-interpreter/).
 
@@ -809,7 +806,7 @@ Syntax highlighting is now available for DreamBerd in VSCode. To enable it, inst
 
 This is what the highlighting looks like:
 
-```
+```dreamberd
 const const name = "Luke"!
 print(name)! // "Luke"
 ```
